@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    color: #fefefe;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d68b26;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 16px;
+    width: 900px;
+    height: 500px;
+    background-color: #24262b;
+    border: 2px solid #161616;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.05);
+}
+
+
+
+h1 {
+    margin-bottom: 64px;
+    font-size: 32px;
+    text-align: center;
+}
+
+span  a{
+    padding: 8px;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+span a:hover {
+    text-decoration: underline;
+}
+
+.calculate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.calculate__div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.input label{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.input input {
+    padding: 0 8px;
+    height: 30px;
+    color: #131313;
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 8px 16px;
+    color: #131313;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #6EC477;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 500ms background-color ease-in;
+}
+
+button:hover {
+    background-color: #6EC488;
+}
+
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 70%;
+    font-size: 28px;
+    background-color: rgba( 255, 255, 255, 0.1);
+    border-radius: 5px;
+    outline: 1px solid #141414;
+}
+
+.in {
+    animation: opacity 500ms ease-in;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }   
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        justify-content: space-between;
+        width: 80%;
+     
+    }
+
+    .input input {
+        margin-bottom: 16px;
+    }
+    
+    button{
+        margin-bottom: 16px;
+    }
+
+    .calculate__div{
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    #result {
+        width: 100%;
+    }
+    
+}
